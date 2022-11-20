@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = {"src/test/resources/ResultTest.csv"})
+    @CsvFileSource(resources = {"/ResultTest.csv" })
     public void shouldFindSquare(String test, int lowBorder, int highBorder, int expected) {
 
         SQRService service = new SQRService();
